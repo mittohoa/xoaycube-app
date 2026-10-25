@@ -18,3 +18,21 @@ trick giải nhanh, CFOP, bấm giờ chuẩn WCA, bảng xếp hạng và thác
 2. Mở file, cho phép **cài ứng dụng từ nguồn này** khi Android hỏi → Cài đặt.
 
 > Repo này chỉ chứa bản phát hành (web đã build, trang chính sách, APK). Mã nguồn không công khai.
+
+---
+
+## English
+
+**XoayCube – learn to solve the 3×3 cube**, from zero to speed solving: 3D step-by-step cube, case lookup,
+speed tricks, CFOP with the full OLL/PLL library, WCA-style timer, daily challenge, weekly tournament,
+race rooms, and a solver that turns a photo of your cube into a beginner-method solution.
+The app follows your phone's language (Vietnamese / English) and you can switch anytime.
+
+| | |
+|---|---|
+| 🌐 **Play on the web** | https://mittohoa.github.io/xoaycube-app/ |
+| 📱 **Download the Android APK** | [Latest release](https://github.com/mittohoa/xoaycube-app/releases/latest) |
+| 🔒 **Privacy policy** | https://mittohoa.github.io/xoaycube-app/privacy.html |
+| 🗑️ **Delete account** | https://mittohoa.github.io/xoaycube-app/delete-account.html |
+| ✉️ **Contact** | mittohoa@gmail.com |
+
