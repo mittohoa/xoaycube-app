@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Xoá tài khoản – XoayCube</title>
+  <title>Xoá tài khoản / Delete account – XoayCube</title>
   <style>
     :root { color-scheme: dark light; --bg:#0b0d22; --ink:#f2f4ff; --muted:#8d93b5; --accent:#ffd43b; }
     @media (prefers-color-scheme: light) { :root { --bg:#ffffff; --ink:#151831; --muted:#5b6080; --accent:#b45309; } }
     body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
     main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
     h1 { font-size:28px; margin:0 0 8px; } h2 { font-size:20px; margin:28px 0 8px; color:var(--accent); }
-    .muted { color:var(--muted); } a { color:var(--accent); }
+    .muted { color:var(--muted); } a { color:var(--accent); } hr { border:0; border-top:1px solid #8884; margin:48px 0; }
   </style>
 </head>
 <body>
 <main>
+  <p class="muted"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+  <section id="vi" lang="vi">
   <h1>Xoá tài khoản XoayCube</h1>
   <p class="muted">Ứng dụng XoayCube – Học giải rubik 3x3 · nhà phát triển mittohoa</p>
 
@@ -39,6 +41,36 @@
     bản sao lưu tự động của nhà cung cấp hạ tầng (tự xoá theo chu kỳ của họ).</p>
 
   <p class="muted"><a href="privacy.html">Chính sách quyền riêng tư</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+  <h1>Delete your XoayCube account</h1>
+  <p class="muted">XoayCube – Learn to solve the 3x3 cube · developer mittohoa</p>
+
+  <h2>Option 1 – In the app (fastest)</h2>
+  <ol>
+    <li>Open XoayCube (Android app or web version) and sign in.</li>
+    <li>Go to the <b>Leaderboard</b> tab → <b>⚙ Account</b> → <b>Delete account</b>.</li>
+    <li>Confirm <b>Delete permanently</b>. You can also choose to delete the learning data on that device.</li>
+  </ol>
+
+  <h2>Option 2 – Request by email</h2>
+  <p>Email <a href="mailto:mittohoa@gmail.com?subject=Delete%20XoayCube%20account">mittohoa@gmail.com</a>
+    from the email address you sign in with, with the subject "Delete XoayCube account". Requests are handled within 7 days.</p>
+
+  <h2>Data that is deleted</h2>
+  <ul>
+    <li>Your display name, avatar, badges, all synced solves and learning progress.</li>
+    <li>Your sign-in account (email) – unless that email is still used for another app by the same developer;
+      in that case only the XoayCube data is deleted.</li>
+  </ul>
+  <p>Deletion takes effect immediately and cannot be undone. No data is kept after deletion, except automatic backups
+    by the infrastructure provider (deleted on their own schedule).</p>
+
+  <p class="muted"><a href="privacy.html#en">Privacy policy</a></p>
+  </section>
 </main>
 </body>
 </html>
