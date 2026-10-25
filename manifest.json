@@ -1,0 +1,35 @@
+{
+    "name": "XoayCube – Học giải rubik 3x3",
+    "short_name": "XoayCube",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#06070D",
+    "theme_color": "#161A33",
+    "description": "Học giải rubik 3x3 mỗi ngày: bài tập, trick giải nhanh, tra cứu tình huống, cube 3D và bấm giờ.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
