@@ -42,5 +42,34 @@
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script src="flutter_bootstrap.js" async></script>
+  <script>
+    // Chạy được khi mất mạng (web/sw.js).
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function () {});
+      });
+    }
+    // Nút "Cài app lên màn hình" trong app (lib/services/install_web.dart).
+    window.xcInstallEvent = null;
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault();
+      window.xcInstallEvent = e;
+    });
+    window.addEventListener('appinstalled', function () { window.xcInstallEvent = null; });
+    window.xcCanPrompt = function () { return window.xcInstallEvent != null; };
+    window.xcPrompt = function () {
+      var e = window.xcInstallEvent;
+      if (!e) return;
+      window.xcInstallEvent = null;
+      e.prompt();
+    };
+    window.xcInstalled = function () {
+      return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+    };
+    window.xcIsIos = function () {
+      return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    };
+  </script>
 </body>
 </html>
